@@ -1,27 +1,26 @@
 import logging.config
 
+import settings
 
-class Log:
-    def __init__(self, name):
-        # create root logger
+
+class Logger:
+    def __init__(self, name="monitoring"):
+        # create logger
         logger = logging.getLogger(name)
         logger.setLevel(logging.DEBUG)
-        fh = logging.FileHandler('monitoring.log')
+        fh = logging.FileHandler("{}{}.log".format(settings.LOG_DIR, name))
         fh.setLevel(logging.DEBUG)
         # create console handler to log error in the console
         ch = logging.StreamHandler()
         ch.setLevel(logging.ERROR)
         # create formatter and add it to the handlers
-        formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+        formatter = logging.Formatter(settings.LOG_FORMAT)
         fh.setFormatter(formatter)
         ch.setFormatter(formatter)
         # add the handlers to the logger
         logger.addHandler(fh)
         logger.addHandler(ch)
-        self.logger = logger
+        self._logger = logger
 
-    def debug(self, message):
-        self.logger.debug(message)
-
-    def error(self, message):
-        self.logger.error(message)
+    def get(self):
+        return self._logger
