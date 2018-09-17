@@ -14,7 +14,8 @@ class Client:
         self.log = log
 
         if __name__ == '__main__':
-            CPU().check()
+            cpu = CPU(logger=log)
+            cpu.check()
 
     def system_status(self):
         os, name, version, _, _, _ = platform.uname()

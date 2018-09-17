@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 __author__ = 'jbu'
 
-from logger import Logger
-
 
 class Check:
     name = 'Check'
@@ -14,15 +12,15 @@ class Check:
     crit_threshold = False
     cron_time = '* * * * *'
 
-    def __init__(self, name='', command='', value=0, warning=0, critical=0, cron_time='* * * * *'):
-        log = Logger().get()
+    def __init__(self, name='', command='', value=0, warning=0, critical=0, cron_time='* * * * *',
+                 logger=None):
         self.name = name
         self.value = value
         self.command = command
         self.warning = warning
         self.critical = critical
         self.cron_time = cron_time
-        self.logger = log
+        self.logger = logger
 
     def set_value(self, value):
         self.value = value
