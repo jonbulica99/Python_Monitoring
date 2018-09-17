@@ -1,2 +1,55 @@
-2018-09-13 14:39:55,991 [notifications.py:4 -             <module>() ] - ERROR - Fehler 123
-2018-09-13 14:40:15,692 [notifications.py:4 - <module>() ] - ERROR - Fehler 123
+2018-09-17 11:16:30,532 [client.py:10 - __init__()] - DEBUG - Initialized client (127.0.0.1)
+2018-09-17 11:16:30,533 [check_cpu.py:19 - check_cpu()] - DEBUG - Check CPU returned value 0.0
+2018-09-17 11:16:30,533 [check_cpu.py:19 - check_cpu()] - DEBUG - Check CPU returned value 0.0
+2018-09-17 11:16:54,969 [client.py:10 - __init__()] - DEBUG - Initialized client (127.0.0.1)
+2018-09-17 11:16:54,969 [check_cpu.py:19 - check_cpu()] - DEBUG - Check CPU returned value 100.0
+2018-09-17 11:16:54,969 [check_cpu.py:19 - check_cpu()] - DEBUG - Check CPU returned value 100.0
+2018-09-17 11:16:54,969 [check.py:37 - warn()] - WARNING - Check CPU with value 100.0 exceeded WARNING threshold of 18.0
+2018-09-17 11:16:54,969 [check.py:37 - warn()] - WARNING - Check CPU with value 100.0 exceeded WARNING threshold of 18.0
+2018-09-17 11:17:51,554 [client.py:10 - __init__()] - DEBUG - Initialized client (127.0.0.1)
+2018-09-17 11:17:51,555 [check_cpu.py:19 - check_cpu()] - DEBUG - Check CPU returned value 0.0
+2018-09-17 11:17:51,555 [check_cpu.py:19 - check_cpu()] - DEBUG - Check CPU returned value 0.0
+2018-09-17 11:19:18,504 [client.py:10 - __init__()] - DEBUG - Initialized client (127.0.0.1)
+2018-09-17 11:19:18,505 [check_cpu.py:19 - check_cpu()] - DEBUG - Check CPU returned value 100.0
+2018-09-17 11:19:18,505 [check_cpu.py:19 - check_cpu()] - DEBUG - Check CPU returned value 100.0
+2018-09-17 11:19:18,505 [check.py:37 - warn()] - WARNING - Check CPU with value 100.0 exceeded WARNING threshold of 18.0
+2018-09-17 11:19:18,505 [check.py:37 - warn()] - WARNING - Check CPU with value 100.0 exceeded WARNING threshold of 18.0
+2018-09-17 11:25:51,924 [client.py:13 - __init__()] - DEBUG - Initialized client (127.0.0.1)
+2018-09-17 11:25:51,926 [check_cpu.py:19 - check_cpu()] - DEBUG - Check CPU returned value 100.0
+2018-09-17 11:25:51,926 [check_cpu.py:19 - check_cpu()] - DEBUG - Check CPU returned value 100.0
+2018-09-17 11:25:51,927 [check.py:37 - warn()] - WARNING - Check CPU with value 100.0 exceeded WARNING threshold of 18.0
+2018-09-17 11:25:51,927 [check.py:37 - warn()] - WARNING - Check CPU with value 100.0 exceeded WARNING threshold of 18.0
+2018-09-17 11:25:51,950 [client.py:34 - system_status()] - DEBUG - I am currently running on Linux version 4.13.0.  This system is named jbu-Satellite-C55t-A and has 2 CPU cores.  Current disk_percent is 10.8 percent.  Current CPU utilization is 60.0 percent.  Current memory utilization is 88.0 percent. it's running since Thursday 13. September 2018.
+2018-09-17 11:25:51,950 [client.py:34 - system_status()] - DEBUG - I am currently running on Linux version 4.13.0.  This system is named jbu-Satellite-C55t-A and has 2 CPU cores.  Current disk_percent is 10.8 percent.  Current CPU utilization is 60.0 percent.  Current memory utilization is 88.0 percent. it's running since Thursday 13. September 2018.
+2018-09-17 11:33:05,869 [client.py:13 - __init__()] - DEBUG - Initialized client (127.0.0.1)
+2018-09-17 11:44:16,134 [client.py:13 - __init__()] - DEBUG - Initialized client (127.0.0.1)
+2018-09-17 11:45:30,130 [client.py:13 - __init__()] - DEBUG - Initialized client (127.0.0.1)
+2018-09-17 11:45:48,282 [client.py:13 - __init__()] - DEBUG - Initialized client (127.0.0.1)
+2018-09-17 11:47:46,192 [client.py:13 - __init__()] - DEBUG - Initialized client (127.0.0.1)
+2018-09-17 11:49:17,137 [client.py:13 - __init__()] - DEBUG - Initialized client (127.0.0.1)
+2018-09-17 11:49:17,138 [check.py:45 - crit()] - CRITICAL - Check CPU with value 100.0 exceeded CRITICAL threshold of 18.0
+2018-09-17 11:49:17,138 [check.py:45 - crit()] - CRITICAL - Check CPU with value 100.0 exceeded CRITICAL threshold of 18.0
+2018-09-17 11:49:17,138 [check_cpu.py:25 - check()] - DEBUG - Check CPU returned value 100.0
+2018-09-17 11:49:17,138 [check_cpu.py:25 - check()] - DEBUG - Check CPU returned value 100.0
+2018-09-17 11:49:17,138 [check.py:45 - crit()] - CRITICAL - Check CPU with value 100.0 exceeded CRITICAL threshold of 18.0
+2018-09-17 11:49:17,138 [check.py:45 - crit()] - CRITICAL - Check CPU with value 100.0 exceeded CRITICAL threshold of 18.0
+2018-09-17 11:49:46,059 [client.py:13 - __init__()] - DEBUG - Initialized client (127.0.0.1)
+2018-09-17 11:49:57,250 [check.py:45 - crit()] - CRITICAL - Check CPU with value 37.7 exceeded CRITICAL threshold of 18.0
+2018-09-17 11:49:57,250 [check.py:45 - crit()] - CRITICAL - Check CPU with value 37.7 exceeded CRITICAL threshold of 18.0
+2018-09-17 11:49:57,251 [check_cpu.py:25 - check()] - DEBUG - Check CPU returned value 37.7
+2018-09-17 11:49:57,251 [check_cpu.py:25 - check()] - DEBUG - Check CPU returned value 37.7
+2018-09-17 11:49:57,252 [check.py:45 - crit()] - CRITICAL - Check CPU with value 37.7 exceeded CRITICAL threshold of 18.0
+2018-09-17 11:49:57,252 [check.py:45 - crit()] - CRITICAL - Check CPU with value 37.7 exceeded CRITICAL threshold of 18.0
+2018-09-17 11:51:50,712 [client.py:13 - __init__()] - DEBUG - Initialized client (127.0.0.1)
+2018-09-17 11:51:50,713 [check.py:45 - crit()] - CRITICAL - Check CPU with value 60.0 exceeded CRITICAL threshold of 18.0
+2018-09-17 11:51:50,713 [check.py:45 - crit()] - CRITICAL - Check CPU with value 60.0 exceeded CRITICAL threshold of 18.0
+2018-09-17 11:51:50,713 [check_cpu.py:25 - check()] - DEBUG - Check CPU returned value 60.0
+2018-09-17 11:51:50,713 [check_cpu.py:25 - check()] - DEBUG - Check CPU returned value 60.0
+2018-09-17 12:00:10,750 [client.py:13 - __init__()] - DEBUG - Initialized client (127.0.0.1)
+2018-09-17 12:00:10,766 [check.py:49 - ok()] - INFO - Check CPU with value 26.1 returned status OK
+2018-09-17 12:00:10,766 [check.py:49 - ok()] - INFO - Check CPU with value 26.1 returned status OK
+2018-09-17 12:00:10,766 [check_cpu.py:25 - check()] - DEBUG - Check CPU returned value 26.1
+2018-09-17 12:00:10,766 [check_cpu.py:25 - check()] - DEBUG - Check CPU returned value 26.1
+2018-09-17 12:15:38,234 [client.py:13 - __init__()] - DEBUG - Initialized client (127.0.0.1)
+2018-09-17 12:15:38,235 [check.py:41 - warn()] - WARNING - Check CPU with value 50.0 exceeded WARNING threshold of 30.0
+2018-09-17 12:15:38,235 [check.py:41 - warn()] - WARNING - Check CPU with value 50.0 exceeded WARNING threshold of 30.0

@@ -1,5 +1,4 @@
 import logging.config
-
 import settings
 
 
@@ -8,11 +7,11 @@ class Logger:
         # create logger
         logger = logging.getLogger(name)
         logger.setLevel(logging.DEBUG)
-        fh = logging.FileHandler("{}{}.log".format(settings.LOG_DIR, name))
+        fh = logging.FileHandler("{}/{}.log".format(settings.LOG_DIR, name))
         fh.setLevel(logging.DEBUG)
         # create console handler to log error in the console
         ch = logging.StreamHandler()
-        ch.setLevel(logging.ERROR)
+        ch.setLevel(logging.WARNING)
         # create formatter and add it to the handlers
         formatter = logging.Formatter(settings.LOG_FORMAT)
         fh.setFormatter(formatter)
