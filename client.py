@@ -5,6 +5,7 @@ import platform
 import datetime
 from logger import Logger
 from checks.check_cpu import CPU
+from cron import Cron
 
 
 class Client:
@@ -35,7 +36,12 @@ class Client:
         self.log.debug(response)
         return response
 
+    def register_job(self):
+        cron = Cron(logger=self.log)
+        cron.create_job()
+
 
 client = Client()
-#client.system_status()
+client.register_job()
+# client.system_status()
 
