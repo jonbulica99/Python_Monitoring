@@ -1,4 +1,16 @@
-2018-09-18 12:46:13,693 [client.py:14 - __init__()] - DEBUG - Initialized client (127.0.0.1)
-2018-09-18 12:46:13,694 [check.py:39 - warn()] - WARNING - Check CPU with value 57.1 exceeded WARNING threshold of 30.0
-2018-09-18 12:46:13,698 [cron.py:17 - __init__()] - DEBUG - Initialized Cron client.py at interval * * * * *
-2018-09-18 12:46:13,699 [cron.py:29 - create_job()] - INFO - Cronjob client.py at interval * * * * * already exists in root's crontab and won't be duplicated
+2018-09-18 12:59:51,168 [client.py:14 - __init__()] - DEBUG - Initialized client (127.0.0.1)
+2018-09-18 12:59:51,169 [check.py:43 - crit()] - CRITICAL - Check CPU with value 77.8 exceeded CRITICAL threshold of 60.0
+2018-09-18 12:59:51,173 [cron.py:17 - __init__()] - DEBUG - Initialized Cron /root/PycharmProjects/monitoringclient.py at interval * * * * *
+2018-09-18 12:59:51,173 [cron.py:33 - create_job()] - INFO - Cronjob /root/PycharmProjects/monitoringclient.py is valid and will be written to root's crontab
+2018-09-18 13:00:17,859 [client.py:14 - __init__()] - DEBUG - Initialized client (127.0.0.1)
+2018-09-18 13:00:17,859 [check.py:43 - crit()] - CRITICAL - Check CPU with value 62.5 exceeded CRITICAL threshold of 60.0
+2018-09-18 13:00:17,864 [cron.py:17 - __init__()] - DEBUG - Initialized Cron /root/PycharmProjects/monitoring/client.py at interval * * * * *
+2018-09-18 13:00:17,865 [cron.py:33 - create_job()] - INFO - Cronjob /root/PycharmProjects/monitoring/client.py is valid and will be written to root's crontab
+2018-09-18 13:02:37,843 [client.py:14 - __init__()] - DEBUG - Initialized client (127.0.0.1)
+2018-09-18 13:02:37,843 [check.py:39 - warn()] - WARNING - Check CPU with value 50.0 exceeded WARNING threshold of 30.0
+2018-09-18 13:02:37,847 [cron.py:19 - __init__()] - DEBUG - Initialized Cron /root/PycharmProjects/monitoring/venv/bin/python /root/PycharmProjects/monitoring/client.py at interval * * * * *
+2018-09-18 13:02:37,848 [cron.py:35 - create_job()] - INFO - Cronjob /root/PycharmProjects/monitoring/venv/bin/python /root/PycharmProjects/monitoring/client.py is valid and will be written to root's crontab
+2018-09-18 13:03:50,749 [client.py:14 - __init__()] - DEBUG - Initialized client (127.0.0.1)
+2018-09-18 13:03:50,749 [check.py:39 - warn()] - WARNING - Check CPU with value 50.0 exceeded WARNING threshold of 30.0
+2018-09-18 13:03:50,754 [cron.py:20 - __init__()] - DEBUG - Initialized Cron client.py at interval * * * * *
+2018-09-18 13:03:50,755 [cron.py:36 - create_job()] - INFO - Cronjob client.py is valid and will be written to root's crontab
