@@ -124,3 +124,7 @@
 2018-09-18 12:11:08,517 [check.py:43 - crit()] - CRITICAL - Check CPU with value 80.0 exceeded CRITICAL threshold of 60.0
 2018-09-18 12:11:08,522 [cron.py:16 - __init__()] - DEBUG - Initialized Cron with command client.py at time * * * * *
 2018-09-18 12:11:08,522 [cron.py:26 - create_job()] - DEBUG - Cronjob Monitoring_client.py is valid and will be written to root's crontab
+2018-09-18 12:14:58,677 [client.py:14 - __init__()] - DEBUG - Initialized client (127.0.0.1)
+2018-09-18 12:14:58,678 [check.py:39 - warn()] - WARNING - Check CPU with value 31.3 exceeded WARNING threshold of 30.0
+2018-09-18 12:14:58,682 [cron.py:16 - __init__()] - DEBUG - Initialized Cron with command client.py at time * * * * *
+2018-09-18 12:14:58,683 [cron.py:30 - create_job()] - DEBUG - Cronjob Monitoring_client.py is valid and will be written to root's crontab

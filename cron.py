@@ -21,6 +21,10 @@ class Cron:
 
         job.setall(self.time)
 
+        # for cron in self.crontab.lines:
+        #
+        #
+
         if job.is_valid():
             self.logger.debug("Cronjob {} is valid and will be written to {}'s crontab"
                               .format(job.comment, self.crontab.user))
