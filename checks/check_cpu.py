@@ -4,7 +4,7 @@ from checks.check import Check
 from psutil import cpu_percent
 
 
-class CPU(Check):
+class Cpu(Check):
 
     def __init__(self, warning=30.0, critical=60.0, cron_time='* * * * *', logger=None):
         self.name = 'CPU'

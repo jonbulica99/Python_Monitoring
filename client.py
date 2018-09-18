@@ -3,8 +3,8 @@ __author__ = 'jbu'
 import psutil
 import platform
 import datetime
+import importlib
 from logger import Logger
-from checks.check_cpu import CPU
 from cron import Cron
 
 
@@ -13,10 +13,6 @@ class Client:
         log = Logger().get()
         log.debug("Initialized client ({})".format(address))
         self.log = log
-
-        if __name__ == '__main__':
-            cpu = CPU(logger=log)
-            cpu.check()
 
     def system_status(self):
         os, name, version, _, _, _ = platform.uname()
@@ -36,12 +32,24 @@ class Client:
         self.log.debug(response)
         return response
 
+    def check(self, check_name=None):
+        if check_name is None:
+            self.log.error('This won\'t work unless you provide check_name')
+            return
+        try:
+            # noinspection PyPep8Naming
+            Check = getattr(importlib.import_module("checks.check_{}".format(check_name.lower())), check_name.title())
+            check = Check(logger=self.log)
+            check.check()
+        except ImportError:
+            self.log.error("No module or class called '{}' exists".format(check_name))
+
     def register_job(self):
         cron = Cron(logger=self.log)
         cron.create_job()
 
 
 client = Client()
-client.register_job()
+client.check("cpu")
 # client.system_status()
 
