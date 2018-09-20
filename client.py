@@ -50,6 +50,6 @@ class Client:
 
 
 client = Client()
-client.check("cpu")
+client.check("disk")
 # client.system_status()
 

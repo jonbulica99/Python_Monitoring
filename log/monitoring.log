@@ -37,3 +37,11 @@
 2018-09-18 13:46:56,461 [client.py:45 - check()] - ERROR - No module or class called 'xpu' exists
 2018-09-18 13:47:07,753 [client.py:14 - __init__()] - DEBUG - Initialized client (127.0.0.1)
 2018-09-18 13:47:07,755 [check.py:39 - warn()] - WARNING - Check CPU with value 57.1 exceeded WARNING threshold of 30.0
+2018-09-20 10:14:58,495 [client.py:14 - __init__()] - DEBUG - Initialized client (127.0.0.1)
+2018-09-20 10:15:18,705 [client.py:14 - __init__()] - DEBUG - Initialized client (127.0.0.1)
+2018-09-20 10:17:38,633 [client.py:14 - __init__()] - DEBUG - Initialized client (127.0.0.1)
+2018-09-20 10:18:05,247 [client.py:14 - __init__()] - DEBUG - Initialized client (127.0.0.1)
+2018-09-20 10:18:57,415 [client.py:14 - __init__()] - DEBUG - Initialized client (127.0.0.1)
+2018-09-20 10:18:57,437 [check.py:47 - ok()] - INFO - Check Disk with value 11.5 returned status OK
+2018-09-20 10:19:41,106 [client.py:14 - __init__()] - DEBUG - Initialized client (127.0.0.1)
+2018-09-20 10:19:41,112 [check.py:39 - warn()] - WARNING - Check Disk with value 11.5 exceeded WARNING threshold of 10.0

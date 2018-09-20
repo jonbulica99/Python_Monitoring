@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 __author__ = 'jbu'
 from checks.check import Check
-import psutil
+from psutil import disk_usage
 
 
 class Disk(Check):
-    def __init__(self, warning=30.0, critical=60.0, cron_time='* * * * *', logger=None):
+    def __init__(self, path='/', warning=30.0, critical=60.0, cron_time='* * * * *', logger=None):
         self.name = 'Disk'
         self.command = 'check_disk.py'
+        self.path = path
         self.warning = warning
         self.critical = critical
         self.cron_time = cron_time
@@ -20,4 +21,6 @@ class Disk(Check):
         super().set_value(value)
 
     def check(self):
-        self.set_value(psutil.disk_usage())
+        disk_info = disk_usage(self.path)
+        # third value in the disk_info tuple contains the disk usage in percent
+        self.set_value(disk_info[3])
