@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
 __author__ = 'jbu'
+
 from checks.check import Check
-from psutil import disk_usage
+from psutil import virtual_memory
 
 
-class Disk(Check):
+class Memory(Check):
 
-    def __init__(self, path='/', warning=30.0, critical=60.0, cron_time='* * * * *', logger=None):
-        self.name = 'Disk'
-        self.command = 'check_disk.py'
-        self.path = path
+    def __init__(self, warning=30.0, critical=60.0, cron_time='* * * * *', logger=None):
+        self.name = 'Memory'
+        self.command = 'check_memory.py'
         self.warning = warning
         self.critical = critical
         self.cron_time = cron_time
@@ -22,6 +22,6 @@ class Disk(Check):
         super().set_value(value)
 
     def check(self):
-        disk_info = disk_usage(self.path)
-        # third value in the disk_info tuple contains the disk usage in percent
-        self.set_value(disk_info[3])
+        mem_info = virtual_memory()
+        # third value in the mem_info tuple contains the memory usage in percent
+        self.set_value(mem_info[2])
