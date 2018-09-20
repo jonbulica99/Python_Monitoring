@@ -4,17 +4,14 @@
     <meta charset="UTF-8">
     <title>Monitoring</title>
     <link rel="stylesheet" href="/static/style.css"/>
-    <script src="/static/dynamic.js"></script>
+    <script src="/static/canvasjs.min.js"></script>
+    <script src="/static/charts.js"></script>
 </head>
 <body>
-<div class="body">
 {% for check in checks %}
     <div class="{{ check }}">
-        Dies ist {{ check }}
+        <div id="{{ check }}-chart" class="chart"></div>
     </div>
 {% endfor %}
-</div>
-<div id="chartContainer" style="height: 360px; width: 100%;"></div>
-
 </body>
 </html>

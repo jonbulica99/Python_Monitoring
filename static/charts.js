@@ -1,9 +1,9 @@
 window.onload = function () {
 
 var dps = []; // dataPoints
-var chart = new CanvasJS.Chart("chartContainer", {
+var chart = new CanvasJS.Chart("cpu-chart", {
 	title :{
-		text: "Dynamic Data"
+		text: "CPU Data"
 	},
 	axisY: {
 		includeZero: false
