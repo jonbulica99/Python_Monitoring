@@ -8,12 +8,14 @@ from crontab import CronTab
 
 class Cron:
 
-    def __init__(self, command=settings.CRON_DEFAULT_COMMAND, time=settings.CRON_DEFAULT_TIME, logger=None):
+    def __init__(self, command=settings.CRON_DEFAULT_COMMAND, check=settings.CRON_DEFAULT_CHECK,
+                 time=settings.CRON_DEFAULT_TIME, logger=None):
         self.time = time
         self.command = command
+        self.check = check
         # command must contain the python interpreter and the full path to the module
-        self.full_command = '{} {}/{}'.format(sys.executable, os.path.dirname(__file__), command)
-        self.comment = 'Monitoring_{}'.format(command)
+        self.full_command = '{} {}/{} -c {}'.format(sys.executable, os.path.dirname(__file__), command, check)
+        self.comment = 'Monitoring_{}'.format(check)
         self.logger = logger
         # Linux-only, loads the crontab from the $USER variable
         self.crontab = CronTab(user=True)

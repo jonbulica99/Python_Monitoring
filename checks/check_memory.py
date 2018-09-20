@@ -23,5 +23,5 @@ class Memory(Check):
 
     def check(self):
         mem_info = virtual_memory()
-        # third value in the mem_info tuple contains the memory usage in percent
+        # second value in the mem_info tuple contains the memory usage in percent
         self.set_value(mem_info[2])

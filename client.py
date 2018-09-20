@@ -1,11 +1,14 @@
 #!/usr/bin/env python3
+
 __author__ = 'jbu'
+from argparse import ArgumentParser
+from logger import Logger
+from cron import Cron
+import os
 import psutil
 import platform
 import datetime
 import importlib
-from logger import Logger
-from cron import Cron
 
 
 class Client:
@@ -48,8 +51,29 @@ class Client:
         cron = Cron(logger=self.log)
         cron.create_job()
 
+    @staticmethod
+    def get_supported_checks():
+        checks = []
+        for file in os.listdir("./checks/"):
+            if "check_" in file:
+                checks.append(file.split('_')[1].split('.')[0])
+        return checks
 
-client = Client()
-client.check("disk")
-# client.system_status()
 
+if __name__ == "__main__":
+    client = Client()
+    parser = ArgumentParser()
+    parser.add_argument("-a", "--check-all", dest="all", action='store_true', help="Run all checks once.")
+    parser.add_argument("-c", "--checks", nargs='+', dest="checks", help="Specify what to check after.")
+    args = parser.parse_args()
+
+    if args.all:
+        for i in client.get_supported_checks():
+            client.check(i)
+    elif args.checks:
+        for i in args.checks:
+            client.check(i)
+    else:
+        client.log.error("Provided arguments are invalid.")
+
+    # client.system_status()
