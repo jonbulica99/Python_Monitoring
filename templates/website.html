@@ -11,6 +11,7 @@
 {% for check in checks %}
     <div class="{{ check }}">
         <div id="{{ check }}-chart" class="chart"></div>
+        <script>setupChart("{{ check }}")</script>
     </div>
 {% endfor %}
 </body>
