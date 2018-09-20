@@ -1,0 +1,7 @@
+2018-09-20 14:35:09,753 [client.py:17 - __init__()] - DEBUG - Initialized client (127.0.0.1)
+2018-09-20 14:35:09,758 [check.py:43 - crit()] - CRITICAL - Check CPU with value 100.0 exceeded CRITICAL threshold of 60.0
+2018-09-20 14:46:37,588 [client.py:17 - __init__()] - DEBUG - Initialized client (127.0.0.1)
+2018-09-20 14:46:37,592 [check.py:47 - ok()] - INFO - Check CPU with value 0.0 returned status OK
+2018-09-20 14:46:37,622 [check.py:43 - crit()] - CRITICAL - Check Proc with value 344 exceeded CRITICAL threshold of 100
+2018-09-20 14:46:37,623 [check.py:47 - ok()] - INFO - Check Disk with value 11.5 returned status OK
+2018-09-20 14:46:37,623 [check.py:43 - crit()] - CRITICAL - Check Memory with value 85.3 exceeded CRITICAL threshold of 60.0

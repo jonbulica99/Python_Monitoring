@@ -2,13 +2,13 @@
 __author__ = 'rosnerh'
 
 from checks.check import Check
-from psutil import virtual_memory
+import psutil
 
 
 class Proc(Check):
 
-    def __init__(self, warning=30.0, critical=60.0, cron_time='* * * * *', logger=None):
-        self.name = 'Process'
+    def __init__(self, warning=50, critical=100, cron_time='* * * * *', logger=None):
+        self.name = 'Proc'
         self.command = 'check_proc.py'
         self.warning = warning
         self.critical = critical
@@ -22,6 +22,6 @@ class Proc(Check):
         super().set_value(value)
 
     def check(self):
-        proc_info = virtual_proc()
+        proc_count = sum(1 for _ in psutil.process_iter())
         # third value in the mem_info tuple contains the memory usage in percent
-        self.set_value(proc_info[2])
+        self.set_value(proc_count)
