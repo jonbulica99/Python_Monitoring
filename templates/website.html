@@ -7,7 +7,11 @@
 </head>
 <body>
 <div class="body">
-{{ content }}
+{% for check in checks %}
+    <div class="{{ check }}">
+        Dies ist {{ check }}
+    </div>
+{% endfor %}
 </div>
 
 </body>

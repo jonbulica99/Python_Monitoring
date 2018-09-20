@@ -1,8 +1,6 @@
-from flask import Flask, render_template
-
-from client import Client
-
 __author__ = 'rosnerh'
+from client import Client
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
@@ -11,20 +9,9 @@ app = Flask(__name__)
 def localhost():
     data = {
         'title': 'My first step',
-        'content': generate_content()
+        'checks': Client.get_supported_checks()
     }
     return render_template('website.html', **data)
-
-
-def generate_content():
-    content = ""
-    for check in Client.get_supported_checks():
-        content += """
-        <div class="check_{}">
-
-        </div>
-        """.format(check)
-    return content
 
 
 if __name__ == "__main__":
