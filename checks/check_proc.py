@@ -25,3 +25,4 @@ class Proc(Check):
         proc_count = sum(1 for _ in psutil.process_iter())
         # third value in the mem_info tuple contains the memory usage in percent
         self.set_value(proc_count)
+        return proc_count

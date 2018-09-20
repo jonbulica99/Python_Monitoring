@@ -21,7 +21,6 @@ class Cpu(Check):
         super().set_value(value)
 
     def check(self):
-        self.set_value(cpu_percent())
-
-
-
+        cpu = cpu_percent()
+        self.set_value(cpu)
+        return cpu

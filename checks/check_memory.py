@@ -22,6 +22,7 @@ class Memory(Check):
         super().set_value(value)
 
     def check(self):
-        mem_info = virtual_memory()
         # second value in the mem_info tuple contains the memory usage in percent
-        self.set_value(mem_info[2])
+        mem_info = virtual_memory()[2]
+        self.set_value(mem_info)
+        return mem_info

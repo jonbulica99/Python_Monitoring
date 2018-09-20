@@ -22,6 +22,7 @@ class Disk(Check):
         super().set_value(value)
 
     def check(self):
-        disk_info = disk_usage(self.path)
         # third value in the disk_info tuple contains the disk usage in percent
-        self.set_value(disk_info[3])
+        disk_info = disk_usage(self.path)[3]
+        self.set_value(disk_info)
+        return disk_info

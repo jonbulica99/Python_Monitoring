@@ -43,7 +43,7 @@ class Client:
             # noinspection PyPep8Naming
             Check = getattr(importlib.import_module("checks.check_{}".format(check_name.lower())), check_name.title())
             check = Check(logger=self.log)
-            check.check()
+            return check.check()
         except ImportError:
             self.log.error("No module or class called '{}' exists".format(check_name))
 

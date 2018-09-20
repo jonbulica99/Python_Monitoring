@@ -5,3 +5,41 @@
 2018-09-20 14:46:37,622 [check.py:43 - crit()] - CRITICAL - Check Proc with value 344 exceeded CRITICAL threshold of 100
 2018-09-20 14:46:37,623 [check.py:47 - ok()] - INFO - Check Disk with value 11.5 returned status OK
 2018-09-20 14:46:37,623 [check.py:43 - crit()] - CRITICAL - Check Memory with value 85.3 exceeded CRITICAL threshold of 60.0
+2018-09-20 15:53:51,646 [client.py:17 - __init__()] - DEBUG - Initialized client (127.0.0.1)
+2018-09-20 15:53:52,099 [client.py:17 - __init__()] - DEBUG - Initialized client (127.0.0.1)
+2018-09-20 15:54:36,226 [client.py:17 - __init__()] - DEBUG - Initialized client (127.0.0.1)
+2018-09-20 15:54:36,612 [client.py:17 - __init__()] - DEBUG - Initialized client (127.0.0.1)
+2018-09-20 15:56:51,710 [client.py:17 - __init__()] - DEBUG - Initialized client (127.0.0.1)
+2018-09-20 15:56:52,128 [client.py:17 - __init__()] - DEBUG - Initialized client (127.0.0.1)
+2018-09-20 15:57:12,295 [client.py:17 - __init__()] - DEBUG - Initialized client (127.0.0.1)
+2018-09-20 15:57:12,691 [client.py:17 - __init__()] - DEBUG - Initialized client (127.0.0.1)
+2018-09-20 15:58:06,522 [client.py:17 - __init__()] - DEBUG - Initialized client (127.0.0.1)
+2018-09-20 15:58:06,926 [client.py:17 - __init__()] - DEBUG - Initialized client (127.0.0.1)
+2018-09-20 15:58:19,476 [client.py:17 - __init__()] - DEBUG - Initialized client (127.0.0.1)
+2018-09-20 15:58:19,877 [client.py:17 - __init__()] - DEBUG - Initialized client (127.0.0.1)
+2018-09-20 16:07:52,641 [client.py:17 - __init__()] - DEBUG - Initialized client (127.0.0.1)
+2018-09-20 16:07:53,046 [client.py:17 - __init__()] - DEBUG - Initialized client (127.0.0.1)
+2018-09-20 16:12:49,565 [client.py:17 - __init__()] - DEBUG - Initialized client (127.0.0.1)
+2018-09-20 16:12:49,975 [client.py:17 - __init__()] - DEBUG - Initialized client (127.0.0.1)
+2018-09-20 16:12:52,085 [check.py:39 - warn()] - WARNING - Check CPU with value 37.2 exceeded WARNING threshold of 30.0
+2018-09-20 16:12:53,409 [check.py:47 - ok()] - INFO - Check CPU with value 14.5 returned status OK
+2018-09-20 16:12:54,236 [check.py:47 - ok()] - INFO - Check CPU with value 21.9 returned status OK
+2018-09-20 16:13:44,737 [client.py:17 - __init__()] - DEBUG - Initialized client (127.0.0.1)
+2018-09-20 16:13:45,137 [client.py:17 - __init__()] - DEBUG - Initialized client (127.0.0.1)
+2018-09-20 16:13:49,132 [check.py:47 - ok()] - INFO - Check CPU with value 19.5 returned status OK
+2018-09-20 16:13:49,852 [check.py:47 - ok()] - INFO - Check CPU with value 19.2 returned status OK
+2018-09-20 16:13:50,483 [check.py:47 - ok()] - INFO - Check CPU with value 17.9 returned status OK
+2018-09-20 16:13:51,542 [check.py:47 - ok()] - INFO - Check CPU with value 11.4 returned status OK
+2018-09-20 16:13:55,170 [check.py:47 - ok()] - INFO - Check CPU with value 5.0 returned status OK
+2018-09-20 16:13:55,719 [check.py:47 - ok()] - INFO - Check CPU with value 18.7 returned status OK
+2018-09-20 16:13:56,166 [check.py:47 - ok()] - INFO - Check CPU with value 29.1 returned status OK
+2018-09-20 16:13:56,548 [check.py:47 - ok()] - INFO - Check CPU with value 22.7 returned status OK
+2018-09-20 16:13:57,000 [check.py:47 - ok()] - INFO - Check CPU with value 21.6 returned status OK
+2018-09-20 16:13:57,769 [check.py:47 - ok()] - INFO - Check CPU with value 15.7 returned status OK
+2018-09-20 16:13:58,133 [check.py:47 - ok()] - INFO - Check CPU with value 22.2 returned status OK
+2018-09-20 16:13:58,542 [check.py:47 - ok()] - INFO - Check CPU with value 15.2 returned status OK
+2018-09-20 16:13:58,819 [check.py:47 - ok()] - INFO - Check CPU with value 23.6 returned status OK
+2018-09-20 16:13:59,075 [check.py:47 - ok()] - INFO - Check CPU with value 26.0 returned status OK
+2018-09-20 16:14:04,646 [check.py:47 - ok()] - INFO - Check Disk with value 11.5 returned status OK
+2018-09-20 16:14:06,289 [check.py:47 - ok()] - INFO - Check Disk with value 11.5 returned status OK
+2018-09-20 16:14:06,952 [check.py:47 - ok()] - INFO - Check Disk with value 11.5 returned status OK

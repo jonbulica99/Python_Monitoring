@@ -1,8 +1,9 @@
 div.chart{
-    height:360px;
-    width:100%;
+    height: 360px;
+    width: 90%;
+    padding: 20px;
 }
 
 .canvasjs-chart-credit{
-    display:none;
+    display: none;
 }
