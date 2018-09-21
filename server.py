@@ -20,7 +20,7 @@ def localhost():
 def daily_post(check):
     if check in checks:
         value = client.check(check)
-        return "Check {} returned {}".format(check, value)
+        return "{}".format(value)
     else:
         return "Error: Check not found!"
 
