@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
-__author__ = 'rosnerh'
+__author__ = 'jbu'
 
 from checks.check import Check
-from psutil import process_iter
+from psutil import net_connections
 
 
-class Proc(Check):
+class Net(Check):
 
     def __init__(self, warning=50, critical=100, cron_time='* * * * *', logger=None):
-        self.name = 'Proc'
-        self.command = 'check_proc.py'
+        self.name = 'Net'
+        self.command = 'check_net.py'
         self.warning = warning
         self.critical = critical
         self.cron_time = cron_time
@@ -22,7 +22,8 @@ class Proc(Check):
         super().set_value(value)
 
     def check(self):
-        proc_count = sum(1 for _ in process_iter())
+        # TODO finish this
+        net_status = net_connections()
         # third value in the mem_info tuple contains the memory usage in percent
-        self.set_value(proc_count)
-        return proc_count
+        self.set_value(0)
+        return 0

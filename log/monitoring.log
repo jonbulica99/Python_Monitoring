@@ -3678,3 +3678,6 @@
 2018-09-21 07:57:06,327 [check.py:43 - crit()] - CRITICAL - Check Proc with value 336 exceeded CRITICAL threshold of 100
 2018-09-21 07:57:06,465 [check.py:47 - ok()] - INFO - Check Disk with value 11.5 returned status OK
 2018-09-21 07:57:06,614 [check.py:43 - crit()] - CRITICAL - Check Memory with value 87.1 exceeded CRITICAL threshold of 60.0
+2018-09-21 08:04:13,486 [client.py:17 - __init__()] - DEBUG - Initialized client (127.0.0.1)
+2018-09-21 08:04:13,585 [check.py:47 - ok()] - INFO - Check Net with value 0 returned status OK
+2018-09-21 08:04:51,995 [client.py:17 - __init__()] - DEBUG - Initialized client (127.0.0.1)
