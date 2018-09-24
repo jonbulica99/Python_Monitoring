@@ -4,3 +4,6 @@ LOG_FORMAT = "%(asctime)s [%(filename)s:%(lineno)s - %(funcName)s()] - %(levelna
 CRON_DEFAULT_COMMAND = "client.py"
 CRON_DEFAULT_CHECK = "cpu"
 CRON_DEFAULT_TIME = "* * * * *"
+
+MAIL_DEFAULT_RECIPIENT = "root@localhost"
+MAIL_DEFAULT_SERVER = "localhost"
