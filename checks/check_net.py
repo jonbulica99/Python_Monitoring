@@ -2,7 +2,7 @@
 __author__ = 'jbu'
 
 from checks.check import Check
-from psutil import net_connections
+import http
 
 
 class Net(Check):
@@ -22,8 +22,19 @@ class Net(Check):
         super().set_value(value)
 
     def check(self):
-        # TODO finish this
-        net_status = net_connections()
-        # third value in the mem_info tuple contains the memory usage in percent
-        self.set_value(0)
-        return 0
+        connection = int(self.is_connected())
+        self.set_value(connection)
+        return connection
+
+    @staticmethod
+    def is_connected():
+        # noinspection PyUnresolvedReferences
+        conn = http.client.HTTPConnection("www.google.com", timeout=5)
+        # noinspection PyBroadException
+        try:
+            conn.request("HEAD", "/")
+            conn.close()
+            return True
+        except:
+            conn.close()
+            return False
