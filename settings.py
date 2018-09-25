@@ -7,3 +7,4 @@ CRON_DEFAULT_TIME = "* * * * *"
 
 MAIL_DEFAULT_RECIPIENT = "root@localhost"
 MAIL_DEFAULT_SERVER = "localhost"
+MAIL_DEFAULT_SERVER_PORT = "25"
