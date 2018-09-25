@@ -10,8 +10,9 @@ from email.mime.text import MIMEText
 
 class Mail(Notification):
 
-    def __init__(self, name='mail', message='', logger=None, recipient=settings.MAIL_DEFAULT_RECIPIENT,
-                 server=settings.MAIL_DEFAULT_SERVER, port=settings.MAIL_DEFAULT_SERVER_PORT):
+    def __init__(self, name='mail', message=settings.MAIL_DEFAULT_MESSAGE, logger=None,
+                 recipient=settings.MAIL_DEFAULT_RECIPIENT, server=settings.MAIL_DEFAULT_SERVER,
+                 port=settings.MAIL_DEFAULT_SERVER_PORT):
         super().__init__(name=name, _type='Mail', message=message, logger=logger)
         self.recipient = recipient
         self.server = server
@@ -36,3 +37,7 @@ class Mail(Notification):
     def notify(self):
         super().notify()
         self.send_mail()
+
+    def format_message(self, check=None):
+        super().format_message(check)
+        self.message.format(self.recipient, check.name, check.value)

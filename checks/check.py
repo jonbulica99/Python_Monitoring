@@ -3,16 +3,11 @@ __author__ = 'jbu'
 
 
 class Check:
-    name = 'Check'
-    command = 'check.py'
-    value = 0.0
-    warning = 0.0
-    critical = 0.0
     warn_threshold = False
     crit_threshold = False
     cron_time = '* * * * *'
 
-    def __init__(self, name='', command='', value=0, warning=0, critical=0, cron_time='* * * * *',
+    def __init__(self, name='Check', command='check.py', value=0, warning=0, critical=0, cron_time='* * * * *',
                  logger=None):
         self.name = name
         self.value = value

@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+import settings
+from notifications.mail import Mail
 
 __author__ = 'jbu'
 from argparse import ArgumentParser
@@ -16,6 +18,7 @@ class Client:
         log = Logger().get()
         log.debug("Initialized client ({})".format(address))
         self.log = log
+        self.send_mail = False
 
     def system_status(self):
         os, name, version, _, _, _ = platform.uname()
@@ -43,7 +46,11 @@ class Client:
             # noinspection PyPep8Naming
             Check = getattr(importlib.import_module("checks.check_{}".format(check_name.lower())), check_name.title())
             check = Check(logger=self.log)
-            return check.check()
+            output = check.check()
+            if self.send_mail:
+                mail = Mail()
+
+            return output
         except ImportError:
             self.log.error("No module or class called '{}' exists".format(check_name))
 
@@ -65,7 +72,11 @@ if __name__ == "__main__":
     parser = ArgumentParser()
     parser.add_argument("-a", "--check-all", dest="all", action='store_true', help="Run all checks once.")
     parser.add_argument("-c", "--checks", nargs='+', dest="checks", help="Specify what to check after.")
+    parser.add_argument("-m", "--mail-notification", dest='mail', action='store_true', help="Send a mail notification.")
     args = parser.parse_args()
+
+    # Determine whether we should send a mail
+    client.send_mail = args.mail
 
     if args.all:
         for i in client.get_supported_checks():
