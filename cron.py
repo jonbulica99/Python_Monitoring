@@ -14,12 +14,19 @@ class Cron:
         self.command = command
         self.check = check
         # command must contain the python interpreter and the full path to the module
-        self.full_command = '{} {}/{} -c {}'.format(sys.executable, os.path.dirname(__file__), command, check)
+        self.full_command = '{} {}/client.py -c {}'.format(sys.executable, os.path.dirname(__file__), check)
         self.comment = 'Monitoring_{}'.format(check)
         self.logger = logger
         # Linux-only, loads the crontab from the $USER variable
         self.crontab = CronTab(user=True)
         self.logger.debug('Initialized Cron {} at interval {}'.format(self.command, self.time))
+
+    @staticmethod
+    def from_check(check=None, logger=None):
+        if check is None:
+            logger.error('This won\'t work unless you provide a check object.')
+            exit(1)
+        return Cron(command=check.command, check=check.name.lower(), time=check.cron_time, logger=logger)
 
     def create_job(self, job=None):
         if job is None:
