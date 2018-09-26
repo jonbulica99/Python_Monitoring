@@ -10,11 +10,8 @@ class Disk(Check):
         self.name = 'Disk'
         self.command = 'check_disk.py'
         self.path = path
-        self.warning = warning
-        self.critical = critical
-        self.cron_time = cron_time
-        self.logger = logger
-        super().__init__(self.name, self.command, self.value, self.warning, self.critical, self.cron_time, self.logger)
+        super().__init__(name=self.name, command=self.command, warning=warning, critical=critical, cron_time=cron_time,
+                         logger=logger)
 
     def set_value(self, value):
         self.warn_threshold = (value > float(self.warning))

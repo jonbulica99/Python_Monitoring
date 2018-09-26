@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
-import settings
-from notifications.mail import Mail
-
 __author__ = 'jbu'
+
+from notifications.mail import Mail
 from argparse import ArgumentParser
 from logger import Logger
 from cron import Cron
@@ -49,7 +48,8 @@ class Client:
             output = check.check()
             if self.send_mail:
                 mail = Mail()
-
+                mail.format_message(check)
+                mail.send_mail()
             return output
         except ImportError:
             self.log.error("No module or class called '{}' exists".format(check_name))

@@ -10,10 +10,11 @@ from email.mime.text import MIMEText
 
 class Mail(Notification):
 
-    def __init__(self, name='mail', message=settings.MAIL_DEFAULT_MESSAGE, logger=None,
-                 recipient=settings.MAIL_DEFAULT_RECIPIENT, server=settings.MAIL_DEFAULT_SERVER,
+    def __init__(self, name='mail', subject=settings.MAIL_DEFAULT_SUBJECT, message=settings.MAIL_DEFAULT_MESSAGE,
+                 logger=None, recipient=settings.MAIL_DEFAULT_RECIPIENT, server=settings.MAIL_DEFAULT_SERVER,
                  port=settings.MAIL_DEFAULT_SERVER_PORT):
         super().__init__(name=name, _type='Mail', message=message, logger=logger)
+        self.subject = subject
         self.recipient = recipient
         self.server = server
         self.port = port
@@ -24,7 +25,7 @@ class Mail(Notification):
         # setup mail parameters
         mail['From'] = "monitoring"
         mail['To'] = self.recipient
-        mail['Subject'] = "Status update from your monitoring system :)"
+        mail['Subject'] = self.subject
 
         # inject the message
         mail.attach(MIMEText(self.message, 'plain'))
