@@ -47,7 +47,7 @@ class Client:
             check = Check(logger=self.log)
             output = check.check()
             if self.send_mail:
-                mail = Mail()
+                mail = Mail(logger=self.log)
                 mail.format_message(check)
                 mail.send_mail()
             return output

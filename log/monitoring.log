@@ -13,3 +13,9 @@
 2018-09-26 11:25:35,005 [check.py:38 - crit()] - CRITICAL - Check Proc with value 334 exceeded CRITICAL threshold of 100
 2018-09-26 11:25:35,007 [check.py:42 - ok()] - INFO - Check Disk with value 11.5 returned status OK
 2018-09-26 11:25:35,008 [check.py:38 - crit()] - CRITICAL - Check Memory with value 86.2 exceeded CRITICAL threshold of 60.0
+2018-09-26 11:26:18,732 [client.py:18 - __init__()] - DEBUG - Initialized client (127.0.0.1)
+2018-09-26 11:26:18,736 [check.py:42 - ok()] - INFO - Check CPU with value 0.0 returned status OK
+2018-09-26 11:27:09,244 [client.py:18 - __init__()] - DEBUG - Initialized client (127.0.0.1)
+2018-09-26 11:27:09,249 [check.py:38 - crit()] - CRITICAL - Check CPU with value 100.0 exceeded CRITICAL threshold of 60.0
+2018-09-26 11:27:09,254 [notification.py:23 - format_message()] - DEBUG - Formatting message for check CPU
+2018-09-26 11:27:09,416 [mail.py:36 - send_mail()] - INFO - Successfully sent mail to root@localhost via localhost
