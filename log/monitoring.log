@@ -1,0 +1,4 @@
+2018-09-26 13:34:54,604 [client.py:18 - __init__()] - DEBUG - Initialized client (127.0.0.1)
+2018-09-26 13:34:54,609 [check.py:34 - warn()] - WARNING - Check Cpu with value 50.0 exceeded WARNING threshold of 30.0
+2018-09-26 13:34:54,687 [notification.py:23 - format_message()] - DEBUG - Formatting message for check Cpu
+2018-09-26 13:34:54,809 [mail.py:36 - send_mail()] - INFO - Successfully sent mail to jonbulica99@gmail.com via localhost

@@ -50,7 +50,7 @@ class Client:
 
             if self.send_mail:
                 mail = Mail(logger=self.log)
-                mail.format_message(check)
+                mail.format_message(check=check)
                 mail.send_mail()
             elif self.cron:
                 cron = Cron.from_check(check=check, logger=self.log)

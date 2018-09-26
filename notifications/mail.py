@@ -40,5 +40,5 @@ class Mail(Notification):
         self.send_mail()
 
     def format_message(self, check=None):
+        self.message = self.message.format(self.recipient, check.name, check.value)
         super().format_message(check)
-        self.message.format(self.recipient, check.name, check.value)
