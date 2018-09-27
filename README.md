@@ -24,7 +24,7 @@ def localhost():
     data = {'checks': checks}
     return render_template('website.html', **data)
 ```
-text
+text...
 ```
 @app.route('/check/<check>', methods=['GET'])
 def daily_post(check):
