@@ -52,7 +52,8 @@ class Client:
                 mail = Mail(logger=self.log)
                 mail.format_message(check=check)
                 mail.send_mail()
-            elif self.cron:
+
+            if self.cron:
                 cron = Cron.from_check(check=check, logger=self.log)
                 cron.create_job()
 
