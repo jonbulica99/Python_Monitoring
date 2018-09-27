@@ -58,6 +58,7 @@ Website
 </body>
 </html>
 ```
+...
 ```
 div.chart{
     height: 360px;
