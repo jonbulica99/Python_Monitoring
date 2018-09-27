@@ -16,7 +16,7 @@ Code
 
 
 
-Localhost
+Localhost / Server
 ---
 ```
 @app.route("/")
@@ -57,7 +57,27 @@ Website
 </body>
 </html>
 ```
-...
+Link zu Javascript dateien:
+```
+<script src="/static/canvasjs.min.js"></script>
+    <script src="/static/charts.js"></script>
+```
+Link zur CSS datei:
+```
+<link rel="stylesheet" href="/static/style.css"/>
+```
+Im Body haben wir einen for Schleife genommen, für jeden Check haben wir ein eigenes Diagramm das aus dem Javascript mit den Daten des einzelnen Checks wiedergegeben wird.
+```
+{% for check in checks %}
+    <div class="{{ check }}">
+        <div id="{{ check }}-chart" class="chart"></div>
+        <script>setupChart("{{ check }}")</script>
+    </div>
+{% endfor %}
+```
+CSS Datei
+---
+In der CSS datei haben wir ein Bild aus der Source datei von der implementierung des Diagramms entfernt und haben die größe des Diagramms definiert.
 ```
 div.chart{
     height: 360px;
