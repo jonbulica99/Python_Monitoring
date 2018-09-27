@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
 __author__ = 'jbu'
 
-from notifications.mail import Mail
-from argparse import ArgumentParser
-from logger import Logger
-from cron import Cron
 import os
 import psutil
 import platform
 import datetime
 import importlib
+from argparse import ArgumentParser
+from notifications.mail import Mail
+from logger import Logger
+from cron import Cron
 
 
 class Client:
@@ -38,7 +38,7 @@ class Client:
         self.log.debug(response)
         return response
 
-    def check(self, check_name=None):
+    def check_by_name(self, check_name=None):
         if check_name is None:
             self.log.error('This won\'t work unless you provide check_name')
             return
@@ -90,9 +90,9 @@ if __name__ == "__main__":
         print(client.system_status())
     elif args.all:
         for i in client.get_supported_checks():
-            client.check(i)
+            client.check_by_name(i)
     elif args.checks:
         for i in args.checks:
-            client.check(i)
+            client.check_by_name(i)
     else:
         client.log.error("Provided arguments are invalid.")
