@@ -18,13 +18,14 @@ Code
 
 Localhost / Server
 ---
+Mit @app.route("/") erstellen wir einen Localhost in diesen Localhost haben wir unsere Website eingefügt mit den Daten CHECK.
 ```
 @app.route("/")
 def localhost():
     data = {'checks': checks}
     return render_template('website.html', **data)
 ```
-text...
+In diesem Abschnitt haben wir eine Schleife die immer wieder die Informationen aus den Checks holt und auf die Websiten Synchronisiert.
 ```
 @app.route('/check/<check>', methods=['GET'])
 def daily_post(check):
