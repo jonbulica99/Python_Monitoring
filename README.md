@@ -7,15 +7,6 @@ Checks
 Code
 ```
 
-
-
-
-
-
-
-
-
-
 Localhost / Server
 ---
 Mit @app.route("/") erstellen wir einen Localhost in diesen Localhost haben wir unsere Website eingefügt mit den Daten CHECK.

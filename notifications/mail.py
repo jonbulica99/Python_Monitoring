@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 __author__ = 'jbu'
 
-from notifications.notification import Notification
-import settings
 import smtplib
+import settings
+from notifications.notification import Notification
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 

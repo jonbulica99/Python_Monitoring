@@ -40,7 +40,7 @@ class Client:
 
     def check_by_name(self, check_name=None):
         if check_name is None:
-            self.log.error('This won\'t work unless you provide check_name')
+            self.log.error("This won't work unless you provide check_name")
             return
         try:
             # noinspection PyPep8Naming
@@ -60,6 +60,7 @@ class Client:
             return output
         except ImportError:
             self.log.error("No module or class called '{}' exists".format(check_name))
+            raise ImportError
 
     @staticmethod
     def get_supported_checks():
