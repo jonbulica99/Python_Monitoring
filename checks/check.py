@@ -1,17 +1,18 @@
 #!/usr/bin/env python3
 __author__ = 'jbu'
 
+from utils.logger import Logger
+
 
 class Check:
-    def __init__(self, name='Check', command='check.py', value=0, warning=0, critical=0, cron_time='* * * * *',
-                 logger=None):
+    def __init__(self, name='Check', command='check.py', value=0, warning=0, critical=0, cron_time='* * * * *'):
         self.name = name
         self.value = value
         self.command = command
         self.warning = warning
         self.critical = critical
         self.cron_time = cron_time
-        self.logger = logger
+        self.logger = Logger().get()
         self.warn_threshold = False
         self.crit_threshold = False
 

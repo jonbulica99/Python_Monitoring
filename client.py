@@ -1,15 +1,17 @@
 #!/usr/bin/env python3
 __author__ = 'jbu'
 
-import os
-import psutil
-import platform
 import datetime
 import importlib
+import os
+import platform
 from argparse import ArgumentParser
-from notifications.mail import Mail
+
+import psutil
 from logger import Logger
-from cron import Cron
+
+from notifications.mail import Mail
+from utils.cron import Cron
 
 
 class Client:
@@ -88,7 +90,7 @@ if __name__ == "__main__":
     client.cron = args.cron
 
     if args.status:
-        client.log.info("Checked system status.")
+        client.log.info("Checking system status.")
         print(client.system_status())
     elif args.all:
         for i in client.get_supported_checks():

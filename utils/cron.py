@@ -1,25 +1,33 @@
 #!/usr/bin/env python3
 __author__ = 'jbu'
+
 import os
-import sys
-import settings
+from sys import platform
+
 from crontab import CronTab
+
+import settings
+from utils.logger import Logger
 
 
 class Cron:
 
     def __init__(self, command=settings.CRON_DEFAULT_COMMAND, check=settings.CRON_DEFAULT_CHECK,
-                 time=settings.CRON_DEFAULT_TIME, logger=None):
+                 time=settings.CRON_DEFAULT_TIME):
         self.time = time
         self.command = command
         self.check = check
         # command must contain the python interpreter and the full path to the module
         self.full_command = '{} {}/client.py -c {}'.format(sys.executable, os.path.dirname(__file__), check)
         self.comment = 'Monitoring_{}'.format(check)
-        self.logger = logger
+        self.logger = Logger().get()
         # Linux-only, loads the crontab from the $USER variable
-        self.crontab = CronTab(user=True)
-        self.logger.debug('Initialized Cron {} at interval {}'.format(self.command, self.time))
+        if platform == "linux" or platform == "linux2":
+            self.crontab = CronTab(user=True)
+            self.logger.debug('Initialized Cron {} at interval {}'.format(self.command, self.time))
+        else:
+            self.logger.error("Crontab only works in Linux-based systems where crontab is installed!")
+
 
     @staticmethod
     def from_check(check=None, logger=None):

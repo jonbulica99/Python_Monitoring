@@ -7,11 +7,10 @@ from psutil import process_iter
 
 class Proc(Check):
 
-    def __init__(self, warning=50, critical=100, cron_time='* * * * *', logger=None):
+    def __init__(self, warning=50, critical=100, cron_time='* * * * *'):
         self.name = 'Proc'
         self.command = 'check_proc.py'
-        super().__init__(name=self.name, command=self.command, warning=warning, critical=critical, cron_time=cron_time,
-                         logger=logger)
+        super().__init__(name=self.name, command=self.command, warning=warning, critical=critical, cron_time=cron_time)
 
     def set_value(self, value):
         self.warn_threshold = (value > float(self.warning))

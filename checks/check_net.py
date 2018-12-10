@@ -7,11 +7,10 @@ import http.client
 
 class Net(Check):
 
-    def __init__(self, warning=0, critical=0, cron_time='* * * * *', logger=None):
+    def __init__(self, warning=0, critical=0, cron_time='* * * * *'):
         self.name = 'Net'
         self.command = 'check_net.py'
-        super().__init__(name=self.name, command=self.command, warning=warning, critical=critical, cron_time=cron_time,
-                         logger=logger)
+        super().__init__(name=self.name, command=self.command, warning=warning, critical=critical, cron_time=cron_time)
 
     def set_value(self, value):
         # self.warn_threshold = (value == float(self.warning))

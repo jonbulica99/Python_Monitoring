@@ -6,12 +6,11 @@ from psutil import disk_usage
 
 class Disk(Check):
 
-    def __init__(self, path='/', warning=30.0, critical=60.0, cron_time='* * * * *', logger=None):
+    def __init__(self, path='/', warning=30.0, critical=60.0, cron_time='* * * * *'):
         self.name = 'Disk'
         self.command = 'check_disk.py'
         self.path = path
-        super().__init__(name=self.name, command=self.command, warning=warning, critical=critical, cron_time=cron_time,
-                         logger=logger)
+        super().__init__(name=self.name, command=self.command, warning=warning, critical=critical, cron_time=cron_time)
 
     def set_value(self, value):
         self.warn_threshold = (value > float(self.warning))

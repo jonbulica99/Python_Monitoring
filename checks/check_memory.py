@@ -7,11 +7,10 @@ from psutil import virtual_memory
 
 class Memory(Check):
 
-    def __init__(self, warning=30.0, critical=60.0, cron_time='* * * * *', logger=None):
+    def __init__(self, warning=30.0, critical=60.0, cron_time='* * * * *'):
         self.name = 'Memory'
         self.command = 'check_memory.py'
-        super().__init__(name=self.name, command=self.command, warning=warning, critical=critical, cron_time=cron_time,
-                         logger=logger)
+        super().__init__(name=self.name, command=self.command, warning=warning, critical=critical, cron_time=cron_time)
 
     def set_value(self, value):
         self.warn_threshold = (value > float(self.warning))

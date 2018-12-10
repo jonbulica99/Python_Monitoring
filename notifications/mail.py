@@ -11,14 +11,14 @@ from email.mime.text import MIMEText
 class Mail(Notification):
 
     def __init__(self, name='mail', subject=settings.MAIL_DEFAULT_SUBJECT, message=settings.MAIL_DEFAULT_MESSAGE,
-                 logger=None, recipient=settings.MAIL_DEFAULT_RECIPIENT, server=settings.MAIL_DEFAULT_SERVER,
+                 recipient=settings.MAIL_DEFAULT_RECIPIENT, server=settings.MAIL_DEFAULT_SERVER,
                  port=settings.MAIL_DEFAULT_SERVER_PORT):
         self.subject = subject
         self.recipient = recipient
         self.server = server
         self.port = port
         self.client = smtplib.SMTP(host=server, port=port)
-        super().__init__(name=name, _type='Mail', message=message, logger=logger)
+        super().__init__(name=name, _type=self.__class__.__name__, message=message)
 
     def send_mail(self):
         mail = MIMEMultipart()

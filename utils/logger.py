@@ -18,8 +18,9 @@ class Logger:
         fh.setFormatter(formatter)
         ch.setFormatter(formatter)
         # add the handlers to the logger
-        logger.addHandler(fh)
-        logger.addHandler(ch)
+        if not logger.hasHandlers():
+            logger.addHandler(fh)
+            logger.addHandler(ch)
         self._logger = logger
 
     def get(self):

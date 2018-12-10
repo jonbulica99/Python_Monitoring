@@ -1,15 +1,16 @@
 __author__ = 'jbu'
 
 import settings
+from utils.logger import Logger
 
 
 class Notification:
 
-    def __init__(self, name='', _type='generic', message=settings.MAIL_DEFAULT_MESSAGE, logger=None):
+    def __init__(self, name='', _type='generic', message=settings.MAIL_DEFAULT_MESSAGE):
         self.name = name
         self.type = _type
         self.message = message
-        self.logger = logger
+        self.logger = Logger().get()
 
     def set_message(self, check=None, message=None):
         if check is None:
