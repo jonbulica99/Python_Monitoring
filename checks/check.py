@@ -39,3 +39,7 @@ class Check:
     def ok(self):
         self.logger.info("Check {} with value {} returned status OK"
                          .format(self.name, self.value))
+    
+    def check(self):
+        pass
+
