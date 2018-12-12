@@ -1,23 +1,22 @@
 # Monitoring
 
 Checks
------
+------
 
-```
-Code
-```
 
 Localhost / Server
----
-Mit @app.route("/") erstellen wir einen Localhost in diesen Localhost haben wir unsere Website eingefügt mit den Daten CHECK.
-```
+------------------
+
+Mit `@app.route("/")` erstellen wir einen lokalen Host. Auf diesen Host haben wir unsere Website erstellt, wo wir die Ausgaben der einzelnen Checks wiedergeben.
+```python
 @app.route("/")
 def localhost():
     data = {'checks': checks}
     return render_template('website.html', **data)
 ```
-In diesem Abschnitt haben wir eine Schleife die immer wieder die Informationen aus den Checks holt und auf die Websiten Synchronisiert.
-```
+
+Der aktuelle Status der einzelnen Checks lässt sich über eine Anfrage an `/check/<name>` (wobei `name` bspw. durch den Check "cpu" ersetzt wird) abfragen. Die dafür zuständige Funktion `daily_post()` sieht folgendermaßen aus:
+```python
 @app.route('/check/<check>', methods=['GET'])
 def daily_post(check):
     if check in checks:
@@ -26,10 +25,14 @@ def daily_post(check):
     else:
         return "Error: {} check not found!".format(check)
 ```
+Die wiederkehrende Aktualisierung der Informationen der einzelnen Checks auf der Webseite erfolgt durch eine Javaskript-Funktion names `setupChart()`, welche den Checknamen jede Sekunde abfragt und diesen auf der Webseite aktualisiert.
 
 Website
----
-```
+-------
+
+Die Webseite wird durch ein Jinja-Template erzeugt. Jeder Checks wird durch die Schleife innerhalb des `<body>` mit dem Template verknüpft und auf der Webseite einzeln wiedergegeben.
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -49,28 +52,22 @@ Website
 </body>
 </html>
 ```
-Link zu Javascript dateien:
-```
+
+### Link zu Javascript-Dateien
+```html
 <script src="/static/canvasjs.min.js"></script>
     <script src="/static/charts.js"></script>
 ```
-Link zur CSS datei:
-```
+### Link zur CSS-Datei
+```html
 <link rel="stylesheet" href="/static/style.css"/>
 ```
-Im Body haben wir einen for Schleife genommen, für jeden Check haben wir ein eigenes Diagramm das aus dem Javascript mit den Daten des einzelnen Checks wiedergegeben wird.
-```
-{% for check in checks %}
-    <div class="{{ check }}">
-        <div id="{{ check }}-chart" class="chart"></div>
-        <script>setupChart("{{ check }}")</script>
-    </div>
-{% endfor %}
-```
+
 CSS Datei
----
-In der CSS datei haben wir ein Bild aus der Source datei von der implementierung des Diagramms entfernt und haben die größe des Diagramms definiert.
-```
+---------
+
+In der CSS-Datei haben wir ein Bild aus der Source-Datei von der Implementierung des Diagramms entfernt und haben die größe des Diagramms definiert:
+```css
 div.chart{
     height: 360px;
     width: 90%;
