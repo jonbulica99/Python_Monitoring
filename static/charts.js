@@ -19,7 +19,7 @@
         });
 
         var updateChart = function (name) {
-                getJSON('http://localhost/check/'+name, function(err, data) {
+                getJSON('http://localhost:8088/check/'+name, function(err, data) {
 //                    if (err !== null) {
                         dps.push({
                             x: xVal,

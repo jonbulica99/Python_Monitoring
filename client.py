@@ -45,11 +45,11 @@ class Client:
         try:
             # noinspection PyPep8Naming
             Check = getattr(importlib.import_module("checks.check_{}".format(check_name.lower())), check_name.title())
-            check = Check(logger=self.log)
+            check = Check()
             output = check.check()
 
             if self.send_mail:
-                mail = Mail(logger=self.log)
+                mail = Mail()
                 mail.format_message(check=check)
                 mail.send_mail()
 

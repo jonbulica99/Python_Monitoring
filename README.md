@@ -27,7 +27,7 @@ Zuständig für die Konfiguration des gesamten Systems ist die `settings.py`-Dat
 
 Webserver
 ---------
-Ein Webserver wird mittles `flask` zur Verügung gestellt und läuft standardmäßig auf Port 80.
+Ein Webserver wird mittles `flask` zur Verügung gestellt und läuft standardmäßig auf Port 8088.
 Mit `@app.route("/")` erstellen wir einen lokalen Host. Auf diesen Host haben wir unsere Website erstellt, wo wir die Ausgaben der einzelnen Checks wiedergeben.
 ```python
 @app.route("/")
