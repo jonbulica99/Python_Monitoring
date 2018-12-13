@@ -1,8 +1,7 @@
-LOG_DIR = "log"
 LOG_FORMAT = "%(asctime)s [%(filename)s:%(lineno)s - %(funcName)s()] - %(levelname)s - %(message)s"
 
 SERVER_DEFAULT_HOST = "0.0.0.0"
-SERVER_DEFAULT_PORT = 80
+SERVER_DEFAULT_PORT = 8081
 
 CRON_DEFAULT_COMMAND = "client.py"
 CRON_DEFAULT_CHECK = "cpu"

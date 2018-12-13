@@ -8,7 +8,7 @@ class Logger:
         # create logger
         logger = logging.getLogger(name)
         logger.setLevel(logging.DEBUG)
-        fh = logging.FileHandler("{}/{}/{}.log".format(os.path.dirname(__file__), settings.LOG_DIR, name))
+        fh = logging.FileHandler("{}/{}.log".format(os.path.dirname(__file__), name))
         fh.setLevel(logging.DEBUG)
         # create console handler to log error in the console
         ch = logging.StreamHandler()

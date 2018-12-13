@@ -2,11 +2,9 @@
 __author__ = 'jbu'
 
 import os
-from sys import platform
-
-from crontab import CronTab
-
 import settings
+from sys import platform
+from crontab import CronTab
 from utils.logger import Logger
 
 
@@ -27,7 +25,6 @@ class Cron:
             self.logger.debug('Initialized Cron {} at interval {}'.format(self.command, self.time))
         else:
             self.logger.error("Crontab only works in Linux-based systems where crontab is installed!")
-
 
     @staticmethod
     def from_check(check=None, logger=None):

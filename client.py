@@ -5,11 +5,9 @@ import datetime
 import importlib
 import os
 import platform
-from argparse import ArgumentParser
-
 import psutil
-from logger import Logger
-
+from argparse import ArgumentParser
+from utils.logger import Logger
 from notifications.mail import Mail
 from utils.cron import Cron
 
