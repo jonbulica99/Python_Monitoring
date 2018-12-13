@@ -100,3 +100,44 @@ div.chart{
     display: none;
 }
 ```
+Unit Tests
+----------
+### Ausführen
+Zum Starten der Unit-Tests muss folgende Commandline eingegeben werden:
+```bash
+python3 ./unit_tests/tests.py
+```
+
+### Beschreibung
+Die zuständige Klasse für die Unit-Tests ist `ModuleTest`, welche bestimmte Abläufe überprüft. 
+* Im `test_supported_checks()` wird überprüft, ob es überhaupt supportete Checks gibt.
+* `test_exceptions_reflection()` hat die Aufgabe zu überprüfen, ob das Importieren eines Checks anhand eines ungültigen Namens fehlschlägt. Ist dieser Checkname ungültig, so wird ein `ImportError` ausgegeben. Sollte der Wert `None` sein, so wird auch `None` ausgegeben.
+* Im `test_checks_default()` wird überprüft, ob der CPU-Check vorhanden und funktionfähig ist.
+* Im `test_system_status()` wird überprüft, ob die Funktion zum Abrufen des Systemstatus funktionsfähig ist.
+
+```python
+class ModuleTest(BaseTest):
+    def __init__(self):
+        self.client = Client()
+
+    def test_supported_checks(self):
+        self.all_checks = self.client.get_supported_checks()
+        self.assertTrue(self.all_checks is not None and len(self.all_checks) > 0)
+
+    def test_exceptions_reflection(self):
+        self.assertTrue(self.client.check_by_name(None) is None)
+        with self.assertRaises(ImportError):
+            random_name = "".join( [random.choice(string.ascii_letters) for i in xrange(15)] )
+            self.client.check_by_name(random_name)
+
+    def test_checks_default(self):
+        self.assertTrue(self.client.check_by_name("cpu") is not None)
+
+    def test_system_status(self):
+        self.assertTrue(self.client.system_status() is not None)
+
+if __name__ == '__main__':
+    unittest.main()
+```
+
+
