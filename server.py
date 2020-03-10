@@ -1,4 +1,6 @@
-__author__ = 'rosnerh'
+__author__ = 'jbu'
+
+
 from client import Client
 from flask import Flask, render_template
 import settings
