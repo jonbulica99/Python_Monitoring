@@ -2,3 +2,126 @@
 2018-12-13 12:05:58,692 [client.py:18 - __init__()] - DEBUG - Initialized client (127.0.0.1)
 2018-12-13 12:06:05,019 [client.py:18 - __init__()] - DEBUG - Initialized client (127.0.0.1)
 2018-12-13 12:06:05,407 [client.py:18 - __init__()] - DEBUG - Initialized client (127.0.0.1)
+2020-03-10 21:26:08,468 [check.py:41 - ok()] - INFO - Check Cpu with value 5.6 returned status OK
+2020-03-10 21:26:08,487 [check.py:33 - warn()] - WARNING - Check Disk with value 58.4 exceeded WARNING threshold of 30.0
+2020-03-10 21:26:08,519 [check.py:37 - crit()] - CRITICAL - Check Proc with value 326 exceeded CRITICAL threshold of 100
+2020-03-10 21:26:08,549 [check.py:41 - ok()] - INFO - Check Memory with value 13.7 returned status OK
+2020-03-10 21:26:08,612 [check.py:41 - ok()] - INFO - Check Net with value 1 returned status OK
+2020-03-10 21:26:09,487 [check.py:41 - ok()] - INFO - Check Cpu with value 5.5 returned status OK
+2020-03-10 21:26:09,506 [check.py:33 - warn()] - WARNING - Check Disk with value 58.4 exceeded WARNING threshold of 30.0
+2020-03-10 21:26:09,532 [check.py:37 - crit()] - CRITICAL - Check Proc with value 326 exceeded CRITICAL threshold of 100
+2020-03-10 21:26:09,552 [check.py:41 - ok()] - INFO - Check Memory with value 13.6 returned status OK
+2020-03-10 21:26:09,635 [check.py:41 - ok()] - INFO - Check Net with value 1 returned status OK
+2020-03-10 21:26:10,485 [check.py:41 - ok()] - INFO - Check Cpu with value 7.0 returned status OK
+2020-03-10 21:26:10,507 [check.py:33 - warn()] - WARNING - Check Disk with value 58.4 exceeded WARNING threshold of 30.0
+2020-03-10 21:26:10,531 [check.py:37 - crit()] - CRITICAL - Check Proc with value 326 exceeded CRITICAL threshold of 100
+2020-03-10 21:26:10,553 [check.py:41 - ok()] - INFO - Check Memory with value 13.6 returned status OK
+2020-03-10 21:26:10,600 [check.py:41 - ok()] - INFO - Check Net with value 1 returned status OK
+2020-03-10 21:26:11,490 [check.py:37 - crit()] - CRITICAL - Check Cpu with value 72.2 exceeded CRITICAL threshold of 60.0
+2020-03-10 21:26:11,505 [check.py:33 - warn()] - WARNING - Check Disk with value 58.4 exceeded WARNING threshold of 30.0
+2020-03-10 21:26:11,530 [check.py:37 - crit()] - CRITICAL - Check Proc with value 326 exceeded CRITICAL threshold of 100
+2020-03-10 21:26:11,557 [check.py:41 - ok()] - INFO - Check Memory with value 13.7 returned status OK
+2020-03-10 21:26:11,599 [check.py:41 - ok()] - INFO - Check Net with value 1 returned status OK
+2020-03-10 21:26:12,487 [check.py:33 - warn()] - WARNING - Check Cpu with value 38.1 exceeded WARNING threshold of 30.0
+2020-03-10 21:26:12,506 [check.py:33 - warn()] - WARNING - Check Disk with value 58.4 exceeded WARNING threshold of 30.0
+2020-03-10 21:26:12,534 [check.py:37 - crit()] - CRITICAL - Check Proc with value 326 exceeded CRITICAL threshold of 100
+2020-03-10 21:26:12,558 [check.py:41 - ok()] - INFO - Check Memory with value 13.6 returned status OK
+2020-03-10 21:26:12,598 [check.py:41 - ok()] - INFO - Check Net with value 1 returned status OK
+2020-03-10 21:26:13,489 [check.py:41 - ok()] - INFO - Check Cpu with value 5.8 returned status OK
+2020-03-10 21:26:13,508 [check.py:33 - warn()] - WARNING - Check Disk with value 58.4 exceeded WARNING threshold of 30.0
+2020-03-10 21:26:13,536 [check.py:37 - crit()] - CRITICAL - Check Proc with value 326 exceeded CRITICAL threshold of 100
+2020-03-10 21:26:13,571 [check.py:41 - ok()] - INFO - Check Memory with value 13.6 returned status OK
+2020-03-10 21:26:13,601 [check.py:41 - ok()] - INFO - Check Net with value 1 returned status OK
+2020-03-10 21:26:14,502 [check.py:41 - ok()] - INFO - Check Cpu with value 8.7 returned status OK
+2020-03-10 21:26:14,506 [check.py:33 - warn()] - WARNING - Check Disk with value 58.4 exceeded WARNING threshold of 30.0
+2020-03-10 21:26:14,533 [check.py:37 - crit()] - CRITICAL - Check Proc with value 326 exceeded CRITICAL threshold of 100
+2020-03-10 21:26:14,559 [check.py:41 - ok()] - INFO - Check Memory with value 13.7 returned status OK
+2020-03-10 21:26:14,600 [check.py:41 - ok()] - INFO - Check Net with value 1 returned status OK
+2020-03-10 21:26:15,487 [check.py:41 - ok()] - INFO - Check Cpu with value 5.2 returned status OK
+2020-03-10 21:26:15,507 [check.py:33 - warn()] - WARNING - Check Disk with value 58.4 exceeded WARNING threshold of 30.0
+2020-03-10 21:26:15,535 [check.py:37 - crit()] - CRITICAL - Check Proc with value 326 exceeded CRITICAL threshold of 100
+2020-03-10 21:26:15,563 [check.py:41 - ok()] - INFO - Check Memory with value 13.8 returned status OK
+2020-03-10 21:26:15,604 [check.py:41 - ok()] - INFO - Check Net with value 1 returned status OK
+2020-03-10 21:26:16,558 [check.py:41 - ok()] - INFO - Check Cpu with value 7.3 returned status OK
+2020-03-10 21:26:16,558 [check.py:33 - warn()] - WARNING - Check Disk with value 58.4 exceeded WARNING threshold of 30.0
+2020-03-10 21:26:16,573 [check.py:37 - crit()] - CRITICAL - Check Proc with value 326 exceeded CRITICAL threshold of 100
+2020-03-10 21:26:16,606 [check.py:41 - ok()] - INFO - Check Net with value 1 returned status OK
+2020-03-10 21:26:16,627 [check.py:41 - ok()] - INFO - Check Memory with value 13.9 returned status OK
+2020-03-10 21:26:17,501 [check.py:41 - ok()] - INFO - Check Cpu with value 5.8 returned status OK
+2020-03-10 21:26:17,515 [check.py:33 - warn()] - WARNING - Check Disk with value 58.4 exceeded WARNING threshold of 30.0
+2020-03-10 21:26:17,538 [check.py:37 - crit()] - CRITICAL - Check Proc with value 326 exceeded CRITICAL threshold of 100
+2020-03-10 21:26:17,604 [check.py:41 - ok()] - INFO - Check Memory with value 13.9 returned status OK
+2020-03-10 21:26:17,654 [check.py:41 - ok()] - INFO - Check Net with value 1 returned status OK
+2020-03-10 21:26:18,490 [check.py:41 - ok()] - INFO - Check Cpu with value 7.8 returned status OK
+2020-03-10 21:26:18,514 [check.py:33 - warn()] - WARNING - Check Disk with value 58.4 exceeded WARNING threshold of 30.0
+2020-03-10 21:26:18,541 [check.py:37 - crit()] - CRITICAL - Check Proc with value 326 exceeded CRITICAL threshold of 100
+2020-03-10 21:26:18,597 [check.py:41 - ok()] - INFO - Check Memory with value 13.8 returned status OK
+2020-03-10 21:26:18,647 [check.py:41 - ok()] - INFO - Check Net with value 1 returned status OK
+2020-03-10 21:26:19,488 [check.py:41 - ok()] - INFO - Check Cpu with value 5.5 returned status OK
+2020-03-10 21:26:19,507 [check.py:33 - warn()] - WARNING - Check Disk with value 58.4 exceeded WARNING threshold of 30.0
+2020-03-10 21:26:19,533 [check.py:37 - crit()] - CRITICAL - Check Proc with value 326 exceeded CRITICAL threshold of 100
+2020-03-10 21:26:19,593 [check.py:41 - ok()] - INFO - Check Memory with value 13.8 returned status OK
+2020-03-10 21:26:19,643 [check.py:41 - ok()] - INFO - Check Net with value 1 returned status OK
+2020-03-10 21:26:20,489 [check.py:41 - ok()] - INFO - Check Cpu with value 5.4 returned status OK
+2020-03-10 21:26:20,507 [check.py:33 - warn()] - WARNING - Check Disk with value 58.4 exceeded WARNING threshold of 30.0
+2020-03-10 21:26:20,527 [check.py:37 - crit()] - CRITICAL - Check Proc with value 326 exceeded CRITICAL threshold of 100
+2020-03-10 21:26:20,593 [check.py:41 - ok()] - INFO - Check Memory with value 13.8 returned status OK
+2020-03-10 21:26:20,649 [check.py:41 - ok()] - INFO - Check Net with value 1 returned status OK
+2020-03-10 21:26:21,488 [check.py:41 - ok()] - INFO - Check Cpu with value 4.2 returned status OK
+2020-03-10 21:26:21,507 [check.py:33 - warn()] - WARNING - Check Disk with value 58.4 exceeded WARNING threshold of 30.0
+2020-03-10 21:26:21,530 [check.py:37 - crit()] - CRITICAL - Check Proc with value 326 exceeded CRITICAL threshold of 100
+2020-03-10 21:26:21,593 [check.py:41 - ok()] - INFO - Check Memory with value 13.8 returned status OK
+2020-03-10 21:26:21,642 [check.py:41 - ok()] - INFO - Check Net with value 1 returned status OK
+2020-03-10 21:26:22,499 [check.py:41 - ok()] - INFO - Check Cpu with value 8.0 returned status OK
+2020-03-10 21:26:22,529 [check.py:33 - warn()] - WARNING - Check Disk with value 58.4 exceeded WARNING threshold of 30.0
+2020-03-10 21:26:22,544 [check.py:37 - crit()] - CRITICAL - Check Proc with value 326 exceeded CRITICAL threshold of 100
+2020-03-10 21:26:22,607 [check.py:41 - ok()] - INFO - Check Net with value 1 returned status OK
+2020-03-10 21:26:22,650 [check.py:41 - ok()] - INFO - Check Memory with value 13.8 returned status OK
+2020-03-10 21:26:23,530 [check.py:33 - warn()] - WARNING - Check Disk with value 58.4 exceeded WARNING threshold of 30.0
+2020-03-10 21:26:23,531 [check.py:41 - ok()] - INFO - Check Cpu with value 6.4 returned status OK
+2020-03-10 21:26:23,546 [check.py:37 - crit()] - CRITICAL - Check Proc with value 326 exceeded CRITICAL threshold of 100
+2020-03-10 21:26:23,573 [check.py:41 - ok()] - INFO - Check Memory with value 13.7 returned status OK
+2020-03-10 21:26:23,609 [check.py:41 - ok()] - INFO - Check Net with value 1 returned status OK
+2020-03-10 21:26:24,496 [check.py:41 - ok()] - INFO - Check Cpu with value 6.2 returned status OK
+2020-03-10 21:26:24,514 [check.py:33 - warn()] - WARNING - Check Disk with value 58.4 exceeded WARNING threshold of 30.0
+2020-03-10 21:26:24,540 [check.py:37 - crit()] - CRITICAL - Check Proc with value 326 exceeded CRITICAL threshold of 100
+2020-03-10 21:26:24,629 [check.py:41 - ok()] - INFO - Check Memory with value 13.6 returned status OK
+2020-03-10 21:26:24,679 [check.py:41 - ok()] - INFO - Check Net with value 1 returned status OK
+2020-03-10 21:26:25,492 [check.py:41 - ok()] - INFO - Check Cpu with value 6.0 returned status OK
+2020-03-10 21:26:25,509 [check.py:33 - warn()] - WARNING - Check Disk with value 58.4 exceeded WARNING threshold of 30.0
+2020-03-10 21:26:25,543 [check.py:37 - crit()] - CRITICAL - Check Proc with value 326 exceeded CRITICAL threshold of 100
+2020-03-10 21:26:25,594 [check.py:41 - ok()] - INFO - Check Memory with value 13.6 returned status OK
+2020-03-10 21:26:25,648 [check.py:41 - ok()] - INFO - Check Net with value 1 returned status OK
+2020-03-10 21:26:26,373 [check.py:41 - ok()] - INFO - Check Cpu with value 8.1 returned status OK
+2020-03-10 21:26:26,413 [check.py:33 - warn()] - WARNING - Check Disk with value 58.4 exceeded WARNING threshold of 30.0
+2020-03-10 21:26:26,477 [check.py:37 - crit()] - CRITICAL - Check Proc with value 326 exceeded CRITICAL threshold of 100
+2020-03-10 21:26:26,524 [check.py:41 - ok()] - INFO - Check Memory with value 13.8 returned status OK
+2020-03-10 21:26:26,551 [check.py:41 - ok()] - INFO - Check Net with value 1 returned status OK
+2020-03-10 21:26:27,462 [check.py:41 - ok()] - INFO - Check Cpu with value 6.4 returned status OK
+2020-03-10 21:26:27,486 [check.py:33 - warn()] - WARNING - Check Disk with value 58.4 exceeded WARNING threshold of 30.0
+2020-03-10 21:26:27,542 [check.py:37 - crit()] - CRITICAL - Check Proc with value 326 exceeded CRITICAL threshold of 100
+2020-03-10 21:26:27,640 [check.py:41 - ok()] - INFO - Check Memory with value 13.6 returned status OK
+2020-03-10 21:26:28,355 [check.py:41 - ok()] - INFO - Check Net with value 1 returned status OK
+2020-03-10 21:26:28,409 [check.py:41 - ok()] - INFO - Check Cpu with value 5.6 returned status OK
+2020-03-10 21:26:28,779 [check.py:33 - warn()] - WARNING - Check Disk with value 58.4 exceeded WARNING threshold of 30.0
+2020-03-10 21:26:29,176 [check.py:37 - crit()] - CRITICAL - Check Proc with value 326 exceeded CRITICAL threshold of 100
+2020-03-10 21:26:29,591 [check.py:41 - ok()] - INFO - Check Net with value 1 returned status OK
+2020-03-10 21:26:29,898 [check.py:41 - ok()] - INFO - Check Memory with value 13.7 returned status OK
+2020-03-10 21:26:30,834 [check.py:41 - ok()] - INFO - Check Cpu with value 10.5 returned status OK
+2020-03-10 21:26:30,894 [check.py:33 - warn()] - WARNING - Check Disk with value 58.4 exceeded WARNING threshold of 30.0
+2020-03-10 21:26:30,967 [check.py:37 - crit()] - CRITICAL - Check Proc with value 326 exceeded CRITICAL threshold of 100
+2020-03-10 21:26:31,030 [check.py:41 - ok()] - INFO - Check Memory with value 13.8 returned status OK
+2020-03-10 21:26:31,048 [check.py:41 - ok()] - INFO - Check Net with value 1 returned status OK
+2020-03-10 21:26:31,834 [check.py:41 - ok()] - INFO - Check Cpu with value 6.6 returned status OK
+2020-03-10 21:26:31,898 [check.py:33 - warn()] - WARNING - Check Disk with value 58.4 exceeded WARNING threshold of 30.0
+2020-03-10 21:26:31,962 [check.py:37 - crit()] - CRITICAL - Check Proc with value 326 exceeded CRITICAL threshold of 100
+2020-03-10 21:26:32,031 [check.py:41 - ok()] - INFO - Check Memory with value 13.7 returned status OK
+2020-03-10 21:26:32,042 [check.py:41 - ok()] - INFO - Check Net with value 1 returned status OK
+2020-03-10 21:26:32,833 [check.py:41 - ok()] - INFO - Check Cpu with value 5.5 returned status OK
+2020-03-10 21:26:32,897 [check.py:33 - warn()] - WARNING - Check Disk with value 58.4 exceeded WARNING threshold of 30.0
+2020-03-10 21:26:32,971 [check.py:37 - crit()] - CRITICAL - Check Proc with value 326 exceeded CRITICAL threshold of 100
+2020-03-10 21:26:33,030 [check.py:41 - ok()] - INFO - Check Memory with value 13.8 returned status OK
+2020-03-10 21:26:33,044 [check.py:41 - ok()] - INFO - Check Net with value 1 returned status OK
+2020-03-10 21:26:33,834 [check.py:41 - ok()] - INFO - Check Cpu with value 4.2 returned status OK
+2020-03-10 21:26:33,896 [check.py:33 - warn()] - WARNING - Check Disk with value 58.4 exceeded WARNING threshold of 30.0
+2020-03-10 21:26:33,967 [check.py:37 - crit()] - CRITICAL - Check Proc with value 326 exceeded CRITICAL threshold of 100

@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d25145c-65b1-4a72-9b33-09d9b6ebf95a" name="Default Changelist" comment="screenshot hinzugefügt">
-      <change afterPath="$PROJECT_DIR$/.idea/Python_Monitoring.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/Monitoring_Server.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/monitoring.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/server.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/charts.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/charts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/monitoring.log" beforeDir="false" afterPath="$PROJECT_DIR$/utils/monitoring.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +12,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Jon Bulica &lt;jonbulica99@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1Yx5XJhRyYX38H1bxkYf25uLcMQ" />
@@ -79,8 +74,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1583871442103</updated>
-      <workItem from="1583871443622" duration="861000" />
+      <workItem from="1583871443622" duration="937000" />
     </task>
+    <task id="LOCAL-00001" summary="screenshot hinzugefügt">
+      <created>1583872324160</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1583872324160</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -88,6 +91,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="screenshot hinzugefügt" />
+    <option name="LAST_COMMIT_MESSAGE" value="screenshot hinzugefügt" />
   </component>
   <component name="WindowStateProjectService">
     <state x="646" y="154" width="618" height="806" key="#Python_Monitoring" timestamp="1583871486056">
@@ -98,30 +103,34 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="418" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1583872070154" />
-    <state x="531" y="96" width="848" height="921" key="CommitChangelistDialog2" timestamp="1583872286359">
+    <state x="531" y="96" width="848" height="921" key="CommitChangelistDialog2" timestamp="1583872324083">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="531" y="96" width="848" height="921" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1583872286359" />
+    <state x="531" y="96" width="848" height="921" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1583872324083" />
     <state x="743" y="311" width="424" height="491" key="FileChooserDialogImpl" timestamp="1583871787891">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="743" y="311" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1583871787891" />
-    <state width="1874" height="275" key="GridCell.Tab.0.bottom" timestamp="1583872057793">
+    <state width="1874" height="275" key="GridCell.Tab.0.bottom" timestamp="1583872481047">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="275" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1583872057793" />
-    <state width="1874" height="275" key="GridCell.Tab.0.center" timestamp="1583872057793">
+    <state width="1874" height="275" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1583872481047" />
+    <state width="1874" height="275" key="GridCell.Tab.0.center" timestamp="1583872481046">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="275" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1583872057793" />
-    <state width="1874" height="275" key="GridCell.Tab.0.left" timestamp="1583872057792">
+    <state width="1874" height="275" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1583872481046" />
+    <state width="1874" height="275" key="GridCell.Tab.0.left" timestamp="1583872481046">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="275" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1583872057792" />
-    <state width="1874" height="275" key="GridCell.Tab.0.right" timestamp="1583872057793">
+    <state width="1874" height="275" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1583872481046" />
+    <state width="1874" height="275" key="GridCell.Tab.0.right" timestamp="1583872481046">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="275" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1583872057793" />
+    <state width="1874" height="275" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1583872481046" />
+    <state x="555" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1583872325519">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="555" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1583872325519" />
     <state x="611" y="260" width="698" height="586" key="find.popup" timestamp="1583871933805">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -133,6 +142,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Python_Monitoring$Python_Monitoring.coverage" NAME="Python_Monitoring Coverage Results" MODIFIED="1583871730497" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/Python_Monitoring$Monitoring_Server.coverage" NAME="Monitoring Server Coverage Results" MODIFIED="1583871952778" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Python_Monitoring$Monitoring_Server.coverage" NAME="Monitoring Server Coverage Results" MODIFIED="1583872444139" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>

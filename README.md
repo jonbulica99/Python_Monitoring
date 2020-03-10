@@ -1,5 +1,5 @@
 # Monitoring
-![Screenshot der GUI](https://github.com/jonbulica99/Python_Monitoring/raw/master/src/images/monitoring.png "Screenshot der GUI")
+![Screenshot der GUI](https://github.com/jonbulica99/Python_Monitoring/raw/master/images/monitoring.png "Screenshot der GUI")
 
 Checks
 ------
