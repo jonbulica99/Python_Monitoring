@@ -2,7 +2,7 @@ Click==7.1.1
 crontab==0.22.6
 Flask==1.1.1
 itsdangerous==1.1.0
-Jinja2==2.11.1
+Jinja2==2.11.3
 logger==1.4
 MarkupSafe==1.1.1
 psutil==5.7.0
